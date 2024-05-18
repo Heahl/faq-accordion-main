@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+html, body, main {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* .accordion-header {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;   
+}
+
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:hover {
+    cursor: pointer;
+    color: dark-purple;
+} */
+
+
+
+/* TDLD */
