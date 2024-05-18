@@ -49,9 +49,9 @@ export default function Home() {
         <meta name="description" content="FAQ-Accordion" />
         <link rel="icon" href="/assets/images/favicon-32x32.png" />
       </Head>
-      <main className="bg-mobile-bg bg-full-auto md:bg-desktop-bg flex min-h-screen flex-col items-center justify-center bg-light-pink bg-no-repeat ">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-light-pink bg-mobile-bg bg-full-auto bg-no-repeat md:bg-desktop-bg ">
         {/* FAQ Container */}
-        <div className="flex flex-col gap-8 rounded-3xl border border-light-pink bg-white p-14 shadow-2xl shadow-grayish-purple md:w-[60%]">
+        <div className="flex w-[90%] flex-col gap-8 rounded-3xl border border-light-pink bg-white p-14 shadow-2xl shadow-grayish-purple md:w-[60%]">
           {/* Header */}
           <div className="flex h-12 flex-row items-center justify-start gap-8">
             <Image
@@ -67,7 +67,7 @@ export default function Home() {
           {accordionItems.map((item, index) => (
             <div className="accordion-item w-full border-b-2 pb-4" key={index}>
               <button
-                className="accordion-button flex h-8 w-full flex-row items-center justify-between font-semibold hover:text-dark-purple"
+                className="accordion-button flex h-8 w-full flex-row items-center justify-between text-left font-semibold hover:text-dark-purple"
                 onClick={() => toggleAccordion(index)}
               >
                 {item.question}
